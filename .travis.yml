@@ -1,6 +1,13 @@
+language: ruby
+rvm:
+- 2.0.0
 deploy:
   provider: s3
-  access_key_id: "YOUR AWS ACCESS KEY"
-  secret_access_key: "YOUR AWS SECRET KEY"
-  bucket: "aws-website-vcraiohello-8r8uf"
-  local_dir: src
+  access_key_id: AKIAJFQXRQKGGRLDHMVA
+  secret_access_key:
+    secure: NHhoo5EkTe3Uo2jN+DBksqpl2M+X8nDbXRt+FWzpiKf+wzU9WAaAVay94dL4ZIr6CT90Lu+f6TY98wnqvoqLUyAU/MM8Nu6uZbqL2Rjko0S4MT4gjlvBUeOBwMlWcXfkmQMTFPqsNo3x8c2aUr+dpJOnukOnC5bWzCPW0za4WNcuZk5DPE/GLJfmvVBcuX7mxwQGsmwtqTx44/i3wdJu1rVc+2ExPy28eeRPC2oz2uO2XSXeuBPFU1ynQpiwe1njY6kFiuNsbqreDjh4buQvJNTQHDCl6wIZB7Vr35+kSTCWMlagWkKGWoeiqD2z1QAAnSCVoOp5vKGdckS+joMVVU2VV6KXMTYBgfkBLsf9d04i+r3zXVVYzdAAgHX7SaqC+uFhYXV6yrfQmbYXvZX7QjzXfnaI5rMsqaCAQ4oIJIAWysNF6aF5kjQIRzWFB5SW2zsOhTCMk4FCH+5Rgall5kcchYN1KInqjxyMBU5FWQMBMQfHIX0xf2Yby47uRrE/oMqUSZeg1wy/MDg3ibbYs/l+i4K8pS2+AlsdPfNeEcUKQm7y2di825jDhbLYfs7YVFxt58tmwmOH4j7OKTcJ5FU+A9M/a6RBKc3XLtYnAJ74596dVp16OjuubyIvsbxuczPxUCHdfwtNbahYOEjSIKu2EeQ0Emx067yguoHN4v0=
+  bucket: aws-website-vcraiohello-8r8uf
+  local-dir: src
+  acl: public_read
+  on:
+    repo: vCra/hello.vcra.io
