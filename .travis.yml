@@ -1,9 +1,4 @@
-language: ruby
-rvm:
-- 2.0.0
-
-script:
-  - echo ""
+language: generic
 
 deploy:
   provider: s3
