@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aaron Walker - Staff Site Reliability Engineer</title>
+        <style>
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.35;
+                color: #2b2b2b;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 25px 20px;
+                font-size: 12.5px;
+            }
+            h1 {
+                margin: 0 0 4px 0;
+                font-size: 30px;
+                color: #1a365d;
+                letter-spacing: -0.5px;
+            }
+            h2 {
+                font-size: 15px;
+                border-bottom: 2px solid #1a365d;
+                padding-bottom: 3px;
+                margin-top: 16px;
+                margin-bottom: 10px;
+                color: #1a365d;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            .contact-info {
+                margin-bottom: 16px;
+                font-size: 13px;
+                color: #4a5568;
+            }
+            .contact-info span {
+                margin-right: 15px;
+            }
+            .contact-info a {
+                color: #4a5568;
+                text-decoration: none;
+            }
+            .summary {
+                margin-bottom: 16px;
+                font-size: 13.5px;
+            }
+            .job {
+                margin-bottom: 14px;
+            }
+            .job-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                margin-bottom: 2px;
+            }
+            .job-title {
+                font-weight: bold;
+                font-size: 14px;
+                color: #2d3748;
+            }
+            .job-company {
+                font-weight: 600;
+                color: #4a5568;
+                margin-bottom: 4px;
+            }
+            .job-date {
+                font-size: 12.5px;
+                color: #718096;
+                font-weight: 500;
+            }
+            ul {
+                margin: 0;
+                padding-left: 18px;
+            }
+            li {
+                margin-bottom: 4px;
+            }
+            .skills-grid {
+                display: grid;
+                grid-template-columns: 180px 1fr;
+                gap: 6px 15px;
+                font-size: 12.5px;
+            }
+            .skill-category {
+                font-weight: bold;
+                color: #2d3748;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Aaron Walker</h1>
+            <div class="contact-info">
+                <span>London, England</span>
+                <span><a href="mailto:aaron@vcra.io">aaron@vcra.io</a></span>
+                <span
+                    ><a href="https://www.linkedin.com/in/awalker-vcra"
+                        >linkedin.com/in/awalker-vcra</a
+                    ></span
+                >
+                <span
+                    ><a href="https://github.com/vcra">github.com/vcra</a></span
+                >
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p class="summary">
+                Highly autonomous Staff Site Reliability Engineer specializing
+                in multi-pillar observability tooling, production Kubernetes
+                platforms, and service meshes. Known for exceptional technical
+                skills, strategic problem-solving, and driving organizational
+                standards through comprehensive architecture and developer
+                self-service tools. A collaborative engineering partner who
+                seamlessly leads internal infrastructure, scalability, and
+                security initiatives while effectively balancing engineering
+                velocity with system reliability.
+            </p>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title"
+                        >Staff Site Reliability Engineer</span
+                    >
+                    <span class="job-date">September 2021 - Present</span>
+                </div>
+                <div class="job-company">Beamery | Greater London</div>
+                <ul>
+                    <li>
+                        Led the organizational observability strategy by
+                        migrating from Datadog to Grafana/Prometheus and the ELK
+                        stack,implementing SLOs based on error budgets, and
+                        establishing dashboards and alerting as code.
+                    </li>
+                    <li>
+                        Implemented a keyless LLMOps stack to enable for broader
+                        GenAI usage whilst centralising cost management,
+                        monitoring and security.
+                    </li>
+                    <li>
+                        Championed developer experience by implementing
+                        Backstage as an internal engineering hub and creating
+                        custom plugins for orchestrating and recording
+                        deployments.
+                    </li>
+                    <li>
+                        Enabled decentralized Kubernetes deployments by creating
+                        shared common terraform modules for workloads with
+                        built-in best practices, secured using least-privilege
+                        IAM and OPA Gatekeeper.
+                    </li>
+                    <li>
+                        Executed complex infrastructure upgrades and migrations,
+                        including critical major version upgrades for
+                        Elasticsearch (v7 to v8) and MongoDB.
+                    </li>
+                    <li>
+                        Operated with high autonomy to deliver major
+                        architectural projects, including the design and rollout
+                        of a new Internal Services Gateway for access to
+                        services outside of centralised .
+                    </li>
+                    <li>
+                        Drove platform security and compliance initiatives,
+                        gathering evidence for SOC2 audits,enabling the security
+                        team to self-serve security changes within Cloudflare,
+                        and provisioning security monitoring tools (such as GCP
+                        SCC)
+                    </li>
+                    <li>
+                        Resolved complex performance and reliability bottlenecks
+                        across the platform by developing custom Prometheus
+                        exporters in Go.
+                    </li>
+                    <li>
+                        Actively contributed to the broader engineering
+                        community by presenting technical talks including at
+                        MongoDB and Grafana London User Groups.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Site Reliability Engineer</span>
+                    <span class="job-date">September 2019 - August 2021</span>
+                </div>
+                <div class="job-company">Sky | London, England</div>
+                <ul>
+                    <li>
+                        Designed and deployed Source-to-Image (S2I) Kubernetes
+                        cluster utilizing Cloud Foundry, RKE, and OpenStack.
+                    </li>
+                    <li>
+                        Developed and operated a Service Broker to facilitate
+                        Database-as-a-Service (DBaaS) deployments directly atop
+                        Kubernetes.
+                    </li>
+                    <li>
+                        Initiated and led a project to overhaul neglected
+                        internal services, improving security posture, regaining
+                        observability (Prometheus, Loki, Grafana), and
+                        increasing overall reliability.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Software Engineering Trainee</span>
+                    <span class="job-date">July 2017 - September 2018</span>
+                </div>
+                <div class="job-company">
+                    Amadeus IT Group | Bad Homburg, Germany
+                </div>
+                <ul>
+                    <li>
+                        Developed full-stack web applications using Django, and
+                        implemented comprehensive Unit and UI testing utilizing
+                        Python and Selenium.
+                    </li>
+                    <li>
+                        Built an IoT Robotics Management Framework with
+                        microservices, leveraging MQTT and the ELK stack, hosted
+                        entirely on AWS.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">Cloud & Containerization:</div>
+                <div>
+                    Kubernetes, AWS, GCP, Azure, Openstack, Istio, Cloud
+                    Foundry, K8s Operators
+                </div>
+
+                <div class="skill-category">Observability & Logging:</div>
+                <div>
+                    Prometheus, Grafana, Loki, Elastic Stack (ELK), FluentBit,
+                    FluentD, Sentry, Tracing
+                </div>
+
+                <div class="skill-category">CI/CD & Automation:</div>
+                <div>
+                    GitLab CI/CD, Argo CD, Jenkins, Ansible, Terraform,
+                    Hashicorp Vault, Backstage
+                </div>
+
+                <div class="skill-category">Languages & Frameworks:</div>
+                <div>Go, Python 3, Java, Kotlin, Django, Flask</div>
+
+                <div class="skill-category">Databases:</div>
+                <div>
+                    PostgreSQL, MySQL/MariaDB, Redis, ElasticSearch, MongoDB,
+                    Kafka
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title"
+                        >Bachelor of Engineering (B.Eng.), Computer Software
+                        Engineering</span
+                    >
+                    <span class="job-date">2015 - 2019</span>
+                </div>
+                <div class="job-company">Aberystwyth University</div>
+                <ul>
+                    <li>
+                        Graduated with a 2:1 (with integrated placement year).
+                    </li>
+                    <li>
+                        Served as President of the AberCompSoc (Computer Science
+                        Society), managing budgets, organizing events like
+                        FOSDEM, and networking with external organizations.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </body>
+</html>
